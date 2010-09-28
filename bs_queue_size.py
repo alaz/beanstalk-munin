@@ -27,6 +27,8 @@ def do_config():
         print '%s.label %s' % (j[0], j[2])
         print '%s.type GAUGE' % j[0]
         print '%s.min 0' % j[0]
+        print '%s.warning 250' % j[0]
+        print '%s.critical 500' % j[0]
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'config':
